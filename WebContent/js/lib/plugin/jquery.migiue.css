@@ -1,6 +1,20 @@
 @charset "utf-8";
 
 .migiue{
+	background: #ffffff url(./migiue_bg.png) no-repeat;
+	width: 325px;
+	height: 37px;
+	text-align:center;
+	padding-top: 21px;
+}
+
+.migiue a{
+	text-decoration:none;
+	color:#333333;
+	font-weight:bold;
+}
+
+.migiue_original{
 	background: #ffffff url(./migiue_original_like_bg.png) no-repeat;
 	width: 370px;
 	height: 37px;
@@ -10,21 +24,7 @@
 	padding-top: 23px;
 }
 
-.migiue a{
+.migiue_original a{
 	text-decoration:none;
 	color:#000000;
-}
-
-.migiue_y{
-	background: #ffffff url(./migiue_bg.png) no-repeat;
-	width: 325px;
-	height: 37px;
-	text-align:center;
-	padding-top: 21px;
-}
-
-.migiue_y a{
-	text-decoration:none;
-	color:#333333;
-	font-weight:bold;
 }
