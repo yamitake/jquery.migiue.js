@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link href="./css/common.css" rel="stylesheet" type="text/css" media="all">
+		<link href="./js/lib/plugin/jquery.migiue.css" rel="stylesheet" type="text/css" media="all">
+		<title>reversi test</title>
+	</head>
+	<body>
+		<div>
+			<h3>migiue</h3>
+			<div class="migiue"></div>
+			<div class="migiue_y"></div>
+		</div>
+
+		<div id="footer">© yapr</div>
+
+		<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+		<script type="text/javascript">google.load("jquery", "1.4.0");google.load("feeds", "1");</script>
+
+		<script type="text/javascript" src="./js/lib/plugin/jquery.migiue.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('.migiue').migiue();
+				$('.migiue_y').migiue();
+			});
+		</script>
+	</body>
+</html>
