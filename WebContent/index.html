@@ -4,24 +4,46 @@
 		<meta charset="utf-8">
 		<link href="./css/common.css" rel="stylesheet" type="text/css" media="all">
 		<link href="./js/lib/plugin/jquery.migiue.css" rel="stylesheet" type="text/css" media="all">
-		<title>reversi test</title>
+		<title>Yapr. | jquery.migiue.js</title>
 	</head>
 	<body>
-		<div>
-			<h3>migiue</h3>
-			<div class="migiue"></div>
+		<div id="wrapper">
+			<div id="header">
+				<h1>
+					<a id="top" href="http://nyapr.net/">
+						Yapr. | jquery.reversi.js
+					</a>
+				</h1>
+			</div>
+
+
+			<h2>jquery.migiue.js</h2>
+			<p>
+				説明やオプションなどは下記を参照してください。
+				<a href="http://plugins.jquery.com/project/Reversi">http://plugins.jquery.com/project/Reversi</a>
+
+				<br />
+				開発ソースコードはこちら
+				<a href="https://github.com/yamitake/jquery.migiue.js">https://github.com/yamitake/jquery.migiue.js</a>
+			</p>
+			<h2>Demo</h2>
+			<div id="gallery"">
+				<div class="migiue"></div>
+			</div>
+			<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+			<script type="text/javascript">google.load("jquery", "1.4.0");google.load("feeds", "1");</script>
+
+			<script type="text/javascript" src="./js/lib/plugin/jquery.migiue.js"></script>
+			<script type="text/javascript">
+				$(function() {
+					$('.migiue').migiue();
+				});
+			</script>
+
+
+			<div id="footer">
+				Copyright (C) yapr All Rights Reserved.
+			</div>
 		</div>
-
-		<div id="footer">© yapr</div>
-
-		<script type="text/javascript" src="http://www.google.com/jsapi"></script>
-		<script type="text/javascript">google.load("jquery", "1.4.0");google.load("feeds", "1");</script>
-
-		<script type="text/javascript" src="./js/lib/plugin/jquery.migiue.js"></script>
-		<script type="text/javascript">
-			$(function() {
-				$('.migiue').migiue();
-			});
-		</script>
 	</body>
 </html>

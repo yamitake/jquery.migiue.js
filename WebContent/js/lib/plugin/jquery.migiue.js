@@ -1,5 +1,5 @@
 /**
- jquery.migiue.js ver0.1
+ jquery.migiue.js ver1.0
 
 The MIT License
 
@@ -33,15 +33,15 @@ THE SOFTWARE.
 			random      : true ,//ランダムに表示するか
 			linked      : true ,//リンクさせるかどうか
 			link        : 'http://www.nicovideo.jp/migiue?f=y' , //リンクさせた時の遷移
-			num_entries : 20   ,
+			num_entries : 20   ,//エントリーをいくつまで読み込むか
 			show_user   : false
 		};
-		
+
 		//必要条件のチェック
 		if(!window['google']){
-			$(this).html('jquery.migiue.jsを使用には、Google AJAX API(http://www.google.com/jsapi)が必要です。');
+			$(this).html('jquery.migiue.jsを使用するには、Google AJAX API(http://www.google.com/jsapi)が必要です。');
 			return;
-		}    
+		}
 
 		if (!window['google']['feeds']){
 			google.load("feeds", "1");
@@ -52,7 +52,7 @@ THE SOFTWARE.
 
 			var feed = new google.feeds.Feed(opts.url);
 			feed.setNumEntries(opts.num_entries);
-			
+
 			var self = this;
 			feed.load(function(result) {
 				if (!result.error) {
@@ -64,7 +64,7 @@ THE SOFTWARE.
 					if(opts.linked){
 						text = '<a href="' + opts.link + '" target="_blank" >' + text + '</a>';
 					}
-					
+
 					$(self).html(text);
 				}else{
 					$(self).html(result.error.code + ":" + result.error.message);
